@@ -1,6 +1,6 @@
 {
-  "name": "machinepack-tdscheduleconnector",
-  "version": "0.1.0",
+  "name": "PUSchedule-connect",
+  "version": "0.1.1",
   "description": "Connector from TDSchedule",
   "scripts": {
     "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
