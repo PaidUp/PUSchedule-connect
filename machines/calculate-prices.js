@@ -31,6 +31,8 @@ module.exports = {
     },
     prices :{
       example : [{
+        description : "some description",
+        dateCharge : "some string data description",
         originalPrice : 203,
         stripePercent : 2.9,
         stripeFlat : 0.3,
@@ -51,6 +53,8 @@ module.exports = {
     success: {
       status: 201,
       body: [{
+        description : 'some description',
+        dataCharge : 'some date string',
         owedPrice: 343.44,
         discount : 12
       }]
