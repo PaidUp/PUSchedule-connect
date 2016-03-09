@@ -1,6 +1,6 @@
 {
   "name": "PUSchedule-connect",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Connector from TDSchedule",
   "scripts": {
     "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
@@ -21,10 +21,11 @@
     "test-machinepack-mocha": "^2.0.0"
   },
   "machinepack": {
-    "friendlyName": "TDSchedule connector",
+    "friendlyName": "PUScheduleConnect",
     "machineDir": "machines/",
     "machines": [
-      "calculate-price"
+      "calculate-price",
+      "calculate-prices"
     ]
   }
 }
