@@ -27,5 +27,9 @@
       "calculate-price",
       "calculate-prices"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PaidUp/PUSchedule-connect.git"
   }
 }
