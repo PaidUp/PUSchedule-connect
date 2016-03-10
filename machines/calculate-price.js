@@ -21,12 +21,12 @@ module.exports = {
   inputs: {
     baseUrl : {
       example : 'http://localhost:9006',
-      description : 'Price base for calculate owed price.',
+      description : 'Url microservice..',
       required : true
     },
     token : {
       example : 'secret-word',
-      description : 'Price base for calculate owed price.',
+      description : 'secret word for autenticate microservice.',
       required : true
     },
     originalPrice : {
