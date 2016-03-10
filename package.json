@@ -1,5 +1,5 @@
 {
-  "name": "PUSchedule-connect",
+  "name": "pu-schedule-connect",
   "version": "1.0.0",
   "description": "Connector from TDSchedule",
   "scripts": {
