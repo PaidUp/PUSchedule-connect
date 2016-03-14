@@ -1,12 +1,14 @@
 {
-  "machine": "calculate-price",
+  "machine": "calculate-prices",
   "expectations": [
     {
-      "todo": true,
+      "todo": false,
       "using": {
         "baseUrl" : "http://localhost:9006",
         "token" : "tdschedule-secret",
         "prices" : [{
+          "description": "some description",
+          "dateCharge" : "YYYY-MM-DD",
           "originalPrice" : 100,
           "stripePercent" : 2.9,
           "stripeFlat" : 0.30,
@@ -18,9 +20,7 @@
 
       },
       "outcome": "success",
-      "output": {"status" : 201, "body" : [
-        { "owedPrice": 105, "discount": 0 }
-      ]}
+      "output": {"status":200}
     }
 
   ]

@@ -14,7 +14,7 @@
         "payCollecting" : true
       },
       "outcome": "success",
-      "output": {"status" : 201, "body" : { "owedPrice": 105, "discount": 0 }}
+      "output": {"status" : 200, "body" : { "owedPrice": 105, "discount": 0 }}
     },
     {
       "using": {
@@ -29,7 +29,7 @@
         "payCollecting" : false
       },
       "outcome": "success",
-      "output": {"status" : 201, "body" : { "owedPrice": 100, "discount": 0 }}
+      "output": {"status" : 200, "body" : { "owedPrice": 100, "discount": 0 }}
     },
     {
       "using": {
@@ -44,7 +44,7 @@
         "payCollecting" : true
       },
       "outcome": "success",
-      "output": {"status" : 201, "body" : { "owedPrice": 108.45, "discount": 0 }}
+      "output": {"status" : 200, "body" : { "owedPrice": 108.45, "discount": 0 }}
     },
     {
       "using": {
@@ -59,7 +59,7 @@
         "payCollecting" : false
       },
       "outcome": "success",
-      "output": {"status" : 201, "body" : { "owedPrice": 103.29, "discount": 0 }}
+      "output": {"status" : 200, "body" : { "owedPrice": 103.29, "discount": 0 }}
     },
     {
       "using": {

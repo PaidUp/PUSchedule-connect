@@ -52,12 +52,14 @@ module.exports = {
       description: 'Array with prices calculated',
       example: {
         status: 200,
-        body: [{
-          description : 'some description',
-          dataCharge : 'some date string',
-          owedPrice: 343.44,
-          discount : 12
-        }]
+        body: {
+          prices: [{
+            description : 'some description',
+            dataCharge : 'some date string',
+            owedPrice: 343.44,
+            discount : 12
+          }]
+        }
       }
     },
 
@@ -87,9 +89,16 @@ module.exports = {
 
     Connector.request(config, {}, body, function(err, resp){
       if(err){
-        return exits.error(err);
+        return exits.error({
+          status: err.status,
+          message: err.body
+        });
       }else{
-        return exits.success(resp);
+        console.log('***RESP' , JSON.stringify(resp))
+        return exits.success({
+          status: resp.status,
+          body: resp.body
+        });
       }
     });
 
