@@ -60,7 +60,7 @@ function request(config, params, body,  cb) {
 // OK.
       success: function (result) {
         return cb(null, {
-          status : 201,
+          status : 200,
           body: JSON.parse(result.body)
         })
       },

@@ -1,5 +1,3 @@
-'use strict'
-
 module.exports = {
 
 
@@ -69,16 +67,16 @@ module.exports = {
 
   fn: function(inputs, exits) {
 
-    let Connector  = require('../api/v1/common/connector');
+    var Connector  = require('../api/v1/common/connector');
 
-    let config = {
+    var config = {
       url: '/api/v2/calculate/prices',
       baseUrl: inputs.baseUrl,
       method: 'post',
       token : inputs.token//'tdschedule-secret'
     }
 
-    let body = { prices : inputs.prices}
+    var body = { prices : inputs.prices}
 
     Connector.request(config, {}, body, function(err, resp){
       if(err){
