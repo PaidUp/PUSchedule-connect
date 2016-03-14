@@ -19,15 +19,17 @@ module.exports = {
   inputs: {
     baseUrl : {
       example : 'http://localhost:9006',
-      description : 'Price base for calculate owed price.',
+      description : 'TDSchedule microservice url.',
       required : true
     },
     token : {
       example : 'secret-word',
-      description : 'Price base for calculate owed price.',
+      description : 'token for authentication.',
       required : true
     },
     prices :{
+      description : 'List of amount to calculate',
+      required : true,
       example : [{
         description : "some description",
         dateCharge : "some string data description",
@@ -38,28 +40,33 @@ module.exports = {
         discount : 10,
         payProcessing : false,
         payCollecting : true
-      }],
-      description : 'List of amount to calculate',
-      required : true
+      }]
     }
   },
 
   defaultExit: 'success',
 
   exits: {
-
     success: {
-      status: 201,
-      body: [{
-        description : 'some description',
-        dataCharge : 'some date string',
-        owedPrice: 343.44,
-        discount : 12
-      }]
+      friendlyName: 'then',
+      description: 'Array with prices calculated',
+      example: {
+        status: 201,
+        body: [{
+          description : 'some description',
+          dataCharge : 'some date string',
+          owedPrice: 343.44,
+          discount : 12
+        }]
+      }
     },
+
     error: {
-      status : 500,
-      message: '*'
+      description : 'Some error with his status',
+      example : {
+        status : 500,
+        message: '*'
+      }
     }
 
   },

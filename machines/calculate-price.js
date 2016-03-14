@@ -19,7 +19,7 @@ module.exports = {
   inputs: {
     baseUrl : {
       example : 'http://localhost:9006',
-      description : 'Url microservice..',
+      description : 'Url TDSchedule microservice..',
       required : true
     },
     token : {
@@ -72,19 +72,25 @@ module.exports = {
   exits: {
 
     success: {
-      status: 201,
-      body: {
-        owedPrice: 343.44,
-        discount : 12
+      friendlyName: 'then',
+      description : 'Object with status and price calculated',
+      example: {
+        status: 200,
+        body: {
+          owedPrice: 343.44,
+          discount : 12
+        }
       }
     },
     error: {
-      status : 500,
-      message: '*'
+      description: 'Some error with his status',
+      example: {
+        status : 500,
+        message: '*'
+      }
     }
 
   },
-
 
   fn: function(inputs, exits) {
 
@@ -114,10 +120,5 @@ module.exports = {
         return exits.success(resp);
       }
     });
-
-
   },
-
-
-
 };
