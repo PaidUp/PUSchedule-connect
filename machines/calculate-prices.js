@@ -51,7 +51,7 @@ module.exports = {
       friendlyName: 'then',
       description: 'Array with prices calculated',
       example: {
-        status: 201,
+        status: 200,
         body: [{
           description : 'some description',
           dataCharge : 'some date string',
