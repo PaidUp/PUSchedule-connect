@@ -55,7 +55,7 @@ module.exports = {
         body: {
           prices: [{
             description : 'some description',
-            dataCharge : 'some date string',
+            dateCharge : 'some date string',
             owedPrice: 343.44,
             discount : 12
           }]
@@ -94,7 +94,6 @@ module.exports = {
           message: err.body
         });
       }else{
-        console.log('***RESP' , JSON.stringify(resp))
         return exits.success({
           status: resp.status,
           body: resp.body
