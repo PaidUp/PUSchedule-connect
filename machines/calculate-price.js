@@ -77,6 +77,8 @@ module.exports = {
       example: {
         status: 200,
         body: {
+          originalPrice: 300,
+          totalFee: 34,
           owedPrice: 343.44,
           discount : 12
         }

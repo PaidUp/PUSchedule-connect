@@ -57,7 +57,9 @@ module.exports = {
             description : 'some description',
             dateCharge : 'some date string',
             owedPrice: 343.44,
-            discount : 12
+            discount : 12,
+            originalPrice: 300,
+            totalFee: 43.44
           }]
         }
       }
