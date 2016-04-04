@@ -1,6 +1,6 @@
 {
   "name": "pu-schedule-connect",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "description": "Connector from TDSchedule",
   "scripts": {
     "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
