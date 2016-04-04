@@ -79,6 +79,8 @@ module.exports = {
         body: {
           originalPrice: 300,
           totalFee: 34,
+          feePaidUp: 4.2,
+          feeStripe: 3.6,
           owedPrice: 343.44,
           discount : 12
         }

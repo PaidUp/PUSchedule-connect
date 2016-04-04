@@ -59,7 +59,9 @@ module.exports = {
             owedPrice: 343.44,
             discount : 12,
             originalPrice: 300,
-            totalFee: 43.44
+            totalFee: 43.44,
+            feePaidUp: 4.2,
+            feeStripe: 3.6
           }]
         }
       }
