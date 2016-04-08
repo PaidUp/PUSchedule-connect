@@ -1,6 +1,6 @@
 {
   "name": "paidup-schedule-connect",
-  "version": "2.2.7",
+  "version": "2.2.8",
   "description": "Connector from TDSchedule",
   "scripts": {
     "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
