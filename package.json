@@ -1,12 +1,13 @@
 {
-  "name": "pu-schedule-connect",
+  "name": "paidup-schedule-connect",
   "version": "2.2.7",
   "description": "Connector from TDSchedule",
   "scripts": {
     "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
   },
   "keywords": [
-    "Schedule connector",
+    "Schedule",
+    "connector",
     "machines",
     "machinepack",
     "PaidUp"
