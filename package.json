@@ -23,12 +23,13 @@
     "test-machinepack-mocha": "^2.0.0"
   },
   "machinepack": {
-    "friendlyName": "PaidUp Schedule Connect",
+    "friendlyName": "PaidUp-Schedule-Connect",
     "machineDir": "machines/",
     "machines": [
       "calculate-price",
       "calculate-prices"
-    ]
+    ],
+    "iconSrc": "https://getpaidup.com/favicon.ico"
   },
   "repository": {
     "type": "git",
