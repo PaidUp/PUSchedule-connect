@@ -6,9 +6,10 @@
     "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
   },
   "keywords": [
-    "TDSchedule connector",
+    "Schedule connector",
     "machines",
-    "machinepack"
+    "machinepack",
+    "PaidUp"
   ],
   "author": "PaidUp",
   "license": "MIT",
@@ -21,7 +22,7 @@
     "test-machinepack-mocha": "^2.0.0"
   },
   "machinepack": {
-    "friendlyName": "PUScheduleConnect",
+    "friendlyName": "PaidUp Schedule Connect",
     "machineDir": "machines/",
     "machines": [
       "calculate-price",
