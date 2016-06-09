@@ -27,6 +27,11 @@ module.exports = {
       description : 'secret word for autenticate microservice.',
       required : true
     },
+    version : {
+      example : 'v2',
+      description : 'version of calculations.',
+      required : true
+    },
     originalPrice : {
       example : 200.23,
       description : 'Price base for calculate owed price.',
@@ -76,14 +81,16 @@ module.exports = {
       description : 'Object with status and price calculated',
       example: {
         status: 200,
-        body: {
+        body: `some like this: {
+          version: 'v2',
+          basePrice: 290,
           originalPrice: 300,
           totalFee: 34,
           feePaidUp: 4.2,
           feeStripe: 3.6,
           owedPrice: 343.44,
           discount : 12
-        }
+        }`
       }
     },
     error: {
@@ -108,6 +115,7 @@ module.exports = {
     }
 
     var body = {
+      version: inputs.version,
       originalPrice: inputs.originalPrice,
       stripePercent: inputs.stripePercent,
       stripeFlat: inputs.stripeFlat,
@@ -121,6 +129,7 @@ module.exports = {
       if(err){
         return exits.error(err);
       }else{
+        resp.body = JSON.stringify(resp.body);
         return exits.success(resp);
       }
     });

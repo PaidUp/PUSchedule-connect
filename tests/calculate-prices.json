@@ -7,6 +7,7 @@
         "baseUrl" : "http://localhost:9006",
         "token" : "tdschedule-secret",
         "prices" : [{
+          "version": "v1",
           "description": "some description",
           "dateCharge" : "YYYY-MM-DD",
           "originalPrice" : 100,

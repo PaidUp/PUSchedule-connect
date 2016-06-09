@@ -31,6 +31,7 @@ module.exports = {
       description : 'List of amount to calculate',
       required : true,
       example : [{
+        version: 'v2',
         description : "some description",
         dateCharge : "some string data description",
         originalPrice : 203,
@@ -52,8 +53,10 @@ module.exports = {
       description: 'Array with prices calculated',
       example: {
         status: 200,
-        body: {
+        body: `some like this: {
           prices: [{
+            version: 'v2',
+            basePrice: 290,
             description : 'some description',
             dateCharge : 'some date string',
             owedPrice: 343.44,
@@ -63,7 +66,7 @@ module.exports = {
             feePaidUp: 4.2,
             feeStripe: 3.6
           }]
-        }
+        }`
       }
     },
 
@@ -100,7 +103,7 @@ module.exports = {
       }else{
         return exits.success({
           status: resp.status,
-          body: resp.body
+          body: JSON.stringify(resp.body)
         });
       }
     });
