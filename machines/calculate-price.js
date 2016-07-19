@@ -32,6 +32,16 @@ module.exports = {
       description : 'version of calculations.',
       required : true
     },
+    type: {
+      example: 'bank',
+      description: 'Type of entity.',
+      required: false
+    },
+    capAmount: {
+      example: '456',
+      description: 'Amount limit for choose a kind of calculation.',
+      required: false
+    },
     originalPrice : {
       example : 200.23,
       description : 'Price base for calculate owed price.',
@@ -116,6 +126,8 @@ module.exports = {
 
     var body = {
       version: inputs.version,
+      type: inputs.type,
+      capAmount: inputs.capAmount,
       originalPrice: inputs.originalPrice,
       stripePercent: inputs.stripePercent,
       stripeFlat: inputs.stripeFlat,
