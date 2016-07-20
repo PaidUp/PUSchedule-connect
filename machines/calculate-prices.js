@@ -32,6 +32,8 @@ module.exports = {
       required : true,
       example : [{
         version: 'v2',
+        type: "card",
+        capAmount: "625",
         description : "some description",
         dateCharge : "some string data description",
         originalPrice : 203,
