@@ -1,6 +1,6 @@
 {
   "name": "paidup-schedule-connect",
-  "version": "2.4.1",
+  "version": "2.5.0",
   "description": "Connector for PaidUp Microservice Schedule",
   "scripts": {
     "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
