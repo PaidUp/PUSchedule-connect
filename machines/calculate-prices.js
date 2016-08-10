@@ -33,7 +33,7 @@ module.exports = {
       example : [{
         version: 'v2',
         type: "card",
-        capAmount: "625",
+        capAmount: 625,
         description : "some description",
         dateCharge : "some string data description",
         originalPrice : 203,

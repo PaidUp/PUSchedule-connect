@@ -38,7 +38,7 @@ module.exports = {
       required: false
     },
     capAmount: {
-      example: '456',
+      example: 456,
       description: 'Amount limit for choose a kind of calculation.',
       required: false
     },
