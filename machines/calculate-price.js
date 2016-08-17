@@ -57,6 +57,16 @@ module.exports = {
       description : 'Amount base to calcualte stripe fee.',
       required : true
     },
+    stripeAchPercent : {
+      example : 2.9,
+      description : 'Percentage for calculate stripe fee.',
+      required : true
+    },
+    stripeAchFlat : {
+      example : 0.30,
+      description : 'Amount base to calcualte stripe fee.',
+      required : true
+    },
     paidUpFee : {
       example : 5,
       description : 'Percentage to calculate Paid Up Fee.',
@@ -131,6 +141,8 @@ module.exports = {
       originalPrice: inputs.originalPrice,
       stripePercent: inputs.stripePercent,
       stripeFlat: inputs.stripeFlat,
+      stripeAchPercent: inputs.stripeAchPercent,
+      stripeAchFlat: inputs.stripeAchFlat,
       paidUpFee: inputs.paidUpFee,
       discount: inputs.discount,
       payProcessing: inputs.payProcessing,

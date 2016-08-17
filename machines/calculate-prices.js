@@ -39,6 +39,8 @@ module.exports = {
         originalPrice : 203,
         stripePercent : 2.9,
         stripeFlat : 0.3,
+        stripeAchPercent : 2.9,
+        stripeAchFlat : 0.3,
         paidUpFee : 5,
         discount : 10,
         payProcessing : false,
