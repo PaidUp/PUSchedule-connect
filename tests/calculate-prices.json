@@ -14,9 +14,14 @@
           "stripePercent" : 2.9,
           "stripeFlat" : 0.30,
           "paidUpFee" : 5,
+          "paidUpFlat" : 5,
           "discount" : 0,
           "payProcessing" : true,
-          "payCollecting" : true
+          "payCollecting" : true,
+          "type": "card",
+          "capAmount": 5,
+          "stripeAchPercent": 0.8,
+          "stripeAchFlat": 5
         }]
 
       },

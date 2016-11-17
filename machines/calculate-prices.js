@@ -42,6 +42,7 @@ module.exports = {
         stripeAchPercent : 2.9,
         stripeAchFlat : 0.3,
         paidUpFee : 5,
+        paidUpFlat : 5,
         discount : 10,
         payProcessing : false,
         payCollecting : true
